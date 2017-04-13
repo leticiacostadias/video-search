@@ -7,15 +7,20 @@
 body {
 	background-image: linear-gradient(to bottom, #000 5%, #222 25%, #222 85%, #000 100%);
 	background-repeat: no-repeat;
-	height: 100vh;
+	min-height: 100vh;
+}
+
+.header--centered {
+	margin: auto;
+	width: 80%;
+	left: 0;
+	right: 0;
+	top: 25%;
+	position: absolute;
 }
 
 .title {
 	margin: auto;
-	left: 0;
-	right: 0;
-	top: 20%;
-	position: absolute;
 	width: 8rem;
 	height: auto;
 	text-align: center;
@@ -35,9 +40,8 @@ body {
 
 .search-field {
 	margin: auto;
-	width: 80%;
+	width: 100%;
 	height: auto;
-	transform: translateY(calc(45vh - 20px));
 	text-align: center;
 	background-color: rgba(256, 256, 256, 0.3);
 	padding: 20px 10px;
