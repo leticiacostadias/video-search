@@ -10,13 +10,20 @@ body {
 	min-height: 100vh;
 }
 
-.header--centered {
+._centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header {
+	display: flex;
 	margin: auto;
 	width: 80%;
-	left: 0;
-	right: 0;
-	top: 25%;
-	position: absolute;
+}
+
+.header--centered {
+	flex-direction: column;
 }
 
 .title {
@@ -24,6 +31,11 @@ body {
 	width: 8rem;
 	height: auto;
 	text-align: center;
+}
+
+.title--inline {
+	display: inline-block;
+	margin-right: 2rem;
 }
 
 .title > h1 {
@@ -48,6 +60,11 @@ body {
 	border-radius: 5px;
 }
 
+.search-field--inline {
+	display: inline-block;
+	width: 60%;
+}
+
 .input-search {
 	width: 70%;
 	border-radius: 5px;
@@ -56,6 +73,57 @@ body {
 	height: 40px;
 	padding: 0 10px;
 }
+
+
+.main {
+	border-radius: 10px;
+	margin: 100px auto 0;
+	width: 55%;
+	padding: 80px 50px;
+	background-color: rgba(105, 105, 105, 0.4);
+}
+
+.main-header {
+	display: flex;
+	align-items: flex-start;
+}
+
+.main-header > img {
+	width: 25%;
+	display: inline-block;
+}
+
+.title-box {
+	padding: 0 50px;
+	width: 80%;
+	display: inline-block;
+}
+
+.tbox__title {
+	font-size: 3.5rem;
+	color: #fff;
+}
+
+.tbox__year {
+	font-size: 2rem;
+	color: #6a6;
+}
+
+.main-content {
+	padding: 30px;
+	color: #fff;
+	width: 100%;
+	margin-top: 40px;
+	line-height: 1.6;
+	border-radius: 0 0 10px 10px;
+}
+
+.main-content > p {
+	margin: 25px 0;
+}
+
+
+
 
 .btn-search {
 	background-color: #6a6;
@@ -74,3 +142,4 @@ body {
 .btn-search:focus, .input-search:focus {
 	outline: none;
 }
+
